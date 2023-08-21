@@ -195,6 +195,13 @@ box-shadow: 6px 5px 15px 0px rgb(66, 60, 66);
         max-width: 300px;
         margin-top: 30px;
     }
+    .flexMainAboutContainer{
+
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+        
+      }
 
 }
 .social-icons{
@@ -211,6 +218,9 @@ box-shadow: 6px 5px 15px 0px rgb(66, 60, 66);
     color:rgb(255, 255, 255);
     text-align: center;
 }
+
+
+
 .enhance{
     text-align: center;
     color: red;
@@ -320,7 +330,7 @@ font-weight: 600;
 
 }
 .about{
-    color: rgb(255, 106, 0);
+    color: rgb(255, 0, 0);
     text-align: center;
     font-size: 30px;
     position: relative;
@@ -560,7 +570,7 @@ table {
   .flexMainAboutContainer{
 
     display: grid;
-    grid-template-columns: 3, 1fr;
+    grid-template-columns: repeat(4,1fr);
   }
   .COS60011{
 
@@ -581,3 +591,43 @@ table {
 
     background-color: rgb(252, 229, 200);
   }
+  .flexMainAboutContainer{
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 4px;
+    place-items: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .customAboutChild{
+
+    height: 170px;
+    width: 170px;
+    background-color: #ffffff;
+    -webkit-box-shadow: -1px 3px 4px 0px rgb(176, 175, 176);
+    -moz-box-shadow: -1px 3px 4px 0px rgb(185, 182, 185);
+    box-shadow: -1px 3px 4px 0px rgb(168, 167, 167);
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+}
+.customAboutChild > h1{
+
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+
+}
+.customAboutChild > ul {
+
+    padding: 22px 32px;
+}
+.demoval{
+
+    display: flex;
+    justify-content: center;
+}
