@@ -37,6 +37,12 @@ box-shadow: 6px 5px 15px 0px rgb(66, 60, 66);
      text-decoration: none;
 
 }
+.footer,.footerCustom{
+
+  position: fixed;
+  width: 100%;
+  bottom :  0;
+}
 .applyBtn{
 
      font-weight: 600;
@@ -104,7 +110,7 @@ box-shadow: 6px 5px 15px 0px rgb(66, 60, 66);
     border-radius: 10px;
     margin-top: 10px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-     background-color: rgb(248, 245, 245);
+     background-color: #ffffff;
 }
 .mainAside{
 
@@ -126,6 +132,7 @@ box-shadow: 6px 5px 15px 0px rgb(66, 60, 66);
   margin-left: 20px;
   font-size: 32px;
   color: #fb2727;
+  text-align: center;
 }
 .jobTitle{
 
@@ -144,11 +151,23 @@ box-shadow: 6px 5px 15px 0px rgb(66, 60, 66);
           justify-content: space-around;
           align-items: center;
     }
+    .mainContainer{
+
+        max-width: 1300px;
+        margin: 0 auto;
+        background-color: rgb(229, 240, 250);
+         display: flex;
+         align-items: center;
+         height: 50vh;
+         justify-content: center;
+         flex-direction: column;
+        
+    }
     .customHeight{
 
-        height: 70px;
-        width: 70px;
-        display: none;
+        height: 80px;
+        width: 80px;
+       
         
         }
         .applyBtn{
@@ -174,6 +193,7 @@ box-shadow: 6px 5px 15px 0px rgb(66, 60, 66);
        .img_section > img {
         height: auto;
         max-width: 300px;
+        margin-top: 30px;
     }
 
 }
@@ -190,6 +210,11 @@ box-shadow: 6px 5px 15px 0px rgb(66, 60, 66);
     background-color: #000;
     color:rgb(255, 255, 255);
     text-align: center;
+}
+.enhance{
+    text-align: center;
+    color: red;
+    margin-top: 10px;
 }
 .icon{
 
@@ -215,15 +240,19 @@ box-shadow: 6px 5px 15px 0px rgb(66, 60, 66);
 }
 .jobMainContainer{
 
-    background-color: rgb(247, 240, 240);
+    background-color: #fff;
     padding: 40px 30px;
+    -webkit-box-shadow: -1px 3px 34px 0px rgb(219, 208, 219);
+    -moz-box-shadow: -1px 3px 34px 0px rgb(222, 218, 222);
+    box-shadow: -1px 3px 34px 0px rgb(221, 217, 221);
+
 }
 #validation{
 
     height: auto;
     max-width: 1200px;
     margin: 0 auto;
-    background-color: #d9d9d9;
+    background-color: #ffffff;
     -webkit-box-shadow: -1px 3px 34px 0px rgb(219, 208, 219);
 -moz-box-shadow: -1px 3px 34px 0px rgb(222, 218, 222);
 box-shadow: -1px 3px 34px 0px rgb(221, 217, 221);
@@ -232,13 +261,20 @@ margin-top: 20px;
 border-radius: 10px;
 
 }
+.ApplyBtnSubmit{
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+}
+
+
 /* apply.html */
 
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #ffffff;
 }
 #statevalues{
 
@@ -255,9 +291,10 @@ body {
 .jobTitle {
     text-align: center;
     padding-top: 20px;
-    font-size: 23px;
+    font-size: 30px;
     margin-bottom: 29px;
     color: red;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .flexContainer{
 
@@ -282,7 +319,35 @@ font-weight: 600;
     width: 60%;
 
 }
+.about{
+    color: rgb(255, 106, 0);
+    text-align: center;
+    font-size: 30px;
+    position: relative;
+    top: 20px;
+}
+.aboutImgProfile{
 
+    height: 150px;
+    width: 150px;
+}
+.mainContainer{
+
+    max-width: 1300px;
+    margin: 30px auto;
+    background-color: rgb(252, 254, 255);
+     display: flex;
+     align-items: center;
+     height: 50vh;
+     justify-content: center;
+     -webkit-box-shadow: -1px 3px 34px 0px rgb(219, 208, 219);
+     -moz-box-shadow: -1px 3px 34px 0px rgb(222, 218, 222);
+     box-shadow: -1px 3px 34px 0px rgb(221, 217, 221);
+}
+.enhancementContainer{
+
+
+}
 
 .skillContainer {
     display: flex;
@@ -296,6 +361,10 @@ font-weight: 600;
 .BtnContainer {
     text-align: center;
     margin-top: 20px;
+}
+.aboutTable{
+
+    margin-left: 50px;
 }
 
 .ApplyBtnSubmit {
@@ -368,3 +437,147 @@ font-weight: 600;
         display: none;
     }
 }
+.services {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px;
+    margin-bottom: 30px;
+    position: relative;
+    bottom: 30px;
+}
+
+
+.header {
+    flex: 1;
+    animation: slide-right 1s ease-in-out forwards;
+}
+
+.img_section {
+    flex: 1;
+    animation: slide-left 1s ease-in-out forwards;
+}
+
+@keyframes slide-right {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-left {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+.enhancementContainer{
+
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: rgb(242, 236, 236);
+    padding: 40px 50px;
+    border-radius: 10px;
+    -webkit-box-shadow: 3px 5px 10px 0px rgb(255, 243, 255);
+    -moz-box-shadow: 3px 5px 10px 0px rgb(247, 240, 247);
+    box-shadow: 3px 5px 10px 0px rgb(243, 241, 243);
+    margin-top: 30px;
+
+}
+.applyBtnEnhancement{
+
+     margin-top: 10px;
+
+}
+.applyBtnEnhancementNew{
+
+
+   background-color: #36d63b;
+   font-weight: 600;
+   text-align:  center;
+   padding: 10px 30px;
+   border-radius: 5px;
+   color: #fff;
+   margin-top: 40px;
+   
+}
+.des{
+
+    max-width: 1000px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    margin-top: 5px;
+    padding: 5px;
+}
+.center{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+table {
+    table-layout: fixed;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  th,
+  td {
+    text-align: center;
+    padding: 16px;
+    text-align: left;
+    background-color: #f7f5f4;
+  }
+  
+
+  th {
+    background-color: #1768ea;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+  }
+  .tableContainer{
+
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .demoFavourites{
+
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     margin-top: 10px;
+     text-align: center;
+
+  }
+  .flexMainAboutContainer{
+
+    display: grid;
+    grid-template-columns: 3, 1fr;
+  }
+  .COS60011{
+
+    background-color: rgb(252, 229, 200);
+  }
+  .TNE60006{
+
+    background-color: #97ff9a;
+  }
+  .COS60004{
+
+    background-color: rgb(255, 195, 255);
+  }
+  .ICT60001{
+    background-color: #98c0ff;
+  }
+  .COS60011{
+
+    background-color: rgb(252, 229, 200);
+  }
